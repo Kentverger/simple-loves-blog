@@ -1,0 +1,17 @@
+body {
+  background-color: #E94E77
+}
+article {
+  background-color: #ffffff;
+  padding: 20px
+}
+article p {
+  font-family: 'Lora', serif;
+  color: #D68189;
+  font-weight: bold;
+}
+article h1 {
+  font-family: 'Istok Web', sans-serif;
+  color: #C6A49A;
+  font-weight: bold;
+}

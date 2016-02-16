@@ -1,6 +1,7 @@
 require "sinatra"
+require "yaml"
 
 get "/" do
-  @content = "te amo Maira"
+  @posts = YAML.load_file('posts.yml')
   erb :layout
 end

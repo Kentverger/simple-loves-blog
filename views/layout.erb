@@ -7,11 +7,20 @@
     <title>Foundation | Welcome</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/app.css" />
+    <link href='https://fonts.googleapis.com/css?family=Istok+Web:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div class="row">
-      <div class="large-12 columns">
-        <%= @content %>
+      <div class="large-7 columns">
+        <article>
+          <% @posts["posts"].each do |post| %>
+            <h1><%= post["title"] %></h1>
+            <% post["paragraphs"].each do |p| %>
+              <p><%= p %></p>
+            <% end %>
+          <% end %>
+        </article>
       </div>
     </div>
     <script src="js/vendor/jquery.min.js"></script>
