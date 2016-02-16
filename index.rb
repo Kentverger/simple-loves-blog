@@ -1,5 +1,6 @@
 require "sinatra"
 
 get "/" do
-  "Te amo maira" 
+  @content = "te amo Maira"
+  erb :layout
 end
